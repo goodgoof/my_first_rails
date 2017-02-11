@@ -11,7 +11,8 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
-
+config.assets.initialize_on_precompile = false #  this line 14 added by Anjali after seeing on
+#stackoverflow.
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
