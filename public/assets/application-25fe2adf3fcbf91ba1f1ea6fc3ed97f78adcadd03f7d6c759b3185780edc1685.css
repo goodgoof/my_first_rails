@@ -1,0 +1,61 @@
+/* line 1, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+nav {
+  background-color: yellow;
+  text-align: center;
+  height: 50px;
+}
+
+/* line 8, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 16, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h1, h2, p {
+  font-family: Ariel;
+  color: blue;
+  text-align: center;
+}
+
+/* line 21, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h2, p {
+  color: black;
+}
+
+/* line 25, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: yellow;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  background-color: yellow;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 40, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.myImage {
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
