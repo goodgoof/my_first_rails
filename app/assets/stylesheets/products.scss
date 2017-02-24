@@ -1,10 +1,15 @@
 .products{
     margin:auto;
-    color:white;
+    color:black;
 }
  .Records{
     text-align:center;
-    color:white;
+    color:black;
+ }
+
+ .col-md-6{
+    width:40%;
+    height:40%;
  }
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.

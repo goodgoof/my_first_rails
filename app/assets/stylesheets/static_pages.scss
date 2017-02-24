@@ -1,8 +1,10 @@
 body{
-    background-color:black;
+    background-color:white;
+    margin:15px;
+    color:black;
 }
 nav{
-    background-color: #ffcccc;
+    background-color: black;
     text-align:center;
     height:50px;
     width:100%;
@@ -10,9 +12,10 @@ nav{
     top:0px;
     left:0px;
     right:0px;
-    color:brown black;
+    color:white;
     border:1px solid black;
 }
+
 
 li{
     display: inline-block;
@@ -23,6 +26,11 @@ li{
 
 }
 
+.email{
+    text-align:left;
+    font-size:16px;
+
+}
 h1{
     font-family:Ariel;
     color:#b30000;
@@ -40,12 +48,21 @@ h1{
     display:inline-block;
     width:100%;
 }
+
 h2, p{
-    color:white;
+    color:black;
     text-align:center;
     margin-top:15px;
 }
 
+.hello{
+    text-align:left;
+}
+
+#login{
+    width:400px;
+
+}
 #stayleft{
     float:left;
     margin-top:0px;
@@ -53,7 +70,7 @@ h2, p{
 }
 
 footer{
-    background-color:#ffcccc;
+    background-color:black;
     height:40px;
     text-align:center;
     position:fixed;
@@ -62,17 +79,24 @@ footer{
     left:0px;
     right:0px;
     margin-bottom:0px;
-    color:brown black;
+    color:white;
     border:1px solid black;
 }
-
+h5 {
+    text-align:center;
+}
 .img-responsive{
     align:middle;
     width:80%;
     margin:auto;
 }
 
+.form-group{
+    text-align:left;
+    font-size:16px;
+    float:left;
 
+}
 
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.

@@ -14,11 +14,14 @@
 
     <nav>
       <ul>
-        <li><a href="/static_pages/index"><span class="glyphicon glyphicon-home"></span></a></li>
-        <li><a href="/static_pages/about">About</a></li>
-        <li><a href="/products/index">Products</a></li>
-        <li><a href="/static_pages/contact"><span class="glyphicon glyphicon-phone-alt"></span></a></li>
+        <li><%=link_to "Home",static_pages_index_path %></li>
+        <li><%=link_to "About",static_pages_about_path %></li>
+        <li><%=link_to "Products",products_path %></li>
+        <li><%=link_to "Contact",static_pages_contact_path %></li>
+        <li><%=link_to "Login",static_pages_login_path %></li>
+
       </ul>
+
     </nav>
 
 

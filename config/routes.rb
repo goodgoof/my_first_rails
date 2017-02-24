@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'static_pages/contact'
 
   get '/static_pages/index'
+
+  get '/static_pages/login'
   #root 'welcome#index'
   root 'static_pages#index'
 

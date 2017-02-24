@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<div class="col-md-6 col-xs-12">
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -7,13 +8,13 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @product.description %>
+  <%=@product.description %>
 </p>
 
 <p>
   <strong>image_url:</strong>
-  <%= @product.imgage_url %>
+  <%=image_tag(@product.imgage_url) %>
 </p>
-
+</div><!--end of col-md-4-->
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
