@@ -1,15 +1,16 @@
-.products{
+body{
     margin:auto;
     color:black;
 }
- .Records{
+
+.field, actions{
     text-align:center;
-    color:black;
- }
+}
 
  .col-md-6{
-    width:40%;
+    width:100%;
     height:40%;
+    border-radius:10px;
  }
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
