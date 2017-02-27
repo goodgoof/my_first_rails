@@ -1,0 +1,157 @@
+/* line 1, c:/Sites/my_first_rails/app/assets/stylesheets/products.scss */
+body {
+  margin: auto;
+  color: black;
+}
+
+/* line 6, c:/Sites/my_first_rails/app/assets/stylesheets/products.scss */
+.field, actions {
+  text-align: center;
+}
+
+/* line 9, c:/Sites/my_first_rails/app/assets/stylesheets/products.scss */
+.crazy {
+  display: block;
+  width: 50px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+/* line 15, c:/Sites/my_first_rails/app/assets/stylesheets/products.scss */
+.col-xs-4 {
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* line 1, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: white;
+  margin: 15px;
+  color: black;
+}
+
+/* line 6, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+nav {
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: white;
+  border: 1px solid black;
+}
+
+/* line 20, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 15px;
+}
+
+/* line 29, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.email {
+  text-align: left;
+  font-size: 16px;
+}
+
+/* line 34, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: Ariel;
+  color: #b30000;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* line 42, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.hello {
+  display: inline-block;
+}
+
+/* line 45, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.welcome {
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 52, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h2, p {
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 58, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.hello {
+  text-align: left;
+}
+
+/* line 62, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+#login {
+  width: 400px;
+}
+
+/* line 66, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+#stayleft {
+  float: left;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+/* line 72, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: black;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  color: white;
+  border: 1px solid black;
+}
+
+/* line 85, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h5 {
+  text-align: center;
+}
+
+/* line 88, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  align: middle;
+  width: 80%;
+  margin: auto;
+}
+
+/* line 94, c:/Sites/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  text-align: left;
+  font-size: 16px;
+  float: left;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
