@@ -1,25 +1,41 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-<table>
-  <tbody>
 
-    <% @products.each do |product| %>
-      <tr class="crazy">
-        <td><%= product.name %></td>
-        <td><%=link_to "images", product.description %></td>
-        <td><%= image_tag(product.imgage_url) %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product)%></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      </div>
-    <% end %>
+<!--<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Color</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+</table>-->
+  <tbody>
+    <div class="container">
+      <div class="row">
+        <% @products.each do|product|%>
+          <div class="col-sm-2 col-md-4">
+            <%=image_tag(product.imgage_url, class:"img-responsive")%>
+          <h1 id="productName"><%=product.name %></h1>
+            <p><%=product.description %></p>
+            <p><%=product.color %></p>
+            <strong><%=product.price %></strong>
+            <p class="SED"><%= link_to 'Show', product %>
+            <%= link_to 'Edit', edit_product_path(product)%>
+            <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          </div><!-- /col -->
+          <%end%>
+      </div><!--end of row-->
+    </div><!--end of container-->
   </tbody>
-</table>
+
 
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
