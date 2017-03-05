@@ -61,6 +61,11 @@ class ProductsController < ApplicationController
     end
   end
 
+  def landing_page
+    @featured_product=Product.first
+  end
+end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product
@@ -71,4 +76,4 @@ class ProductsController < ApplicationController
     def product_params
       params.require(:product).permit(:name, :description, :imgage_url, :color, :price)
     end
-end
+
