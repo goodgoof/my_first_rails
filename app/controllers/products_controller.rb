@@ -55,26 +55,23 @@ class ProductsController < ApplicationController
   # DELETE /products/1.json
   def destroy
     @product.destroy
+
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
-  def landing_page
-    @featured_product=Product.first
-  end
-end
-
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @product = Product.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def product_params
-      params.require(:product).permit(:name, :description, :imgage_url, :color, :price)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_product
+    @product = Product.find(params[:id])
+  end
 
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def product_params
+    params.require(:product).permit(:name, :description, :imgage_url, :color, :price)
+  end
 
+end
