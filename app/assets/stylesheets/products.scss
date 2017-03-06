@@ -1,38 +1,33 @@
-body{
-    margin:auto;
-    color:black;
+body {
+  margin: auto;
+  color: black;
 }
 
-.field, actions{
-    text-align:center;
+.field,
+.actions {
+  text-align:center;
 }
+
 .crazy{
-    display:block;
-    width:50px;
-    margin:auto;
-    border-radius:5px;
+  display: block;
+  width: 50px;
+  margin: auto;
+  border-radius: 5px;
 }
+
  .col-xs-4{
-    width:100%;
-    height:40%;
-    border-radius:10px;
-    margin-top:20px;
+   width: 100%;
+   height: 40%;
+   border-radius: 10px;
+   margin-top: 20px;
  }
 
 .container{
-    width:100%;
-    padding:5px;
-    text-align:center;
+  width: 100%;
+  padding: 85px 0;
+  text-align: center;
 }
 
+.SED { padding:2px; }
 
-.SED{
-    padding:2px;
-}
-#productName{
-    margin:auto;
-}
-
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#productName { margin: auto; }
