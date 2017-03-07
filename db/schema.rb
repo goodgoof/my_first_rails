@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170306194412) do
     t.string   "color"
     t.string   "string"
     t.decimal  "price"
-    t.string   "image_url"
+
   end
 
 end
