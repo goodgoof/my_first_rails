@@ -1,107 +1,96 @@
-body{
-    background-color:white;
-    margin:15px;
-    color:black;
+body {
+  background-color: #FFF;
+  margin: 15px;
+  color: #000;
 }
-nav{
-    background-color: black;
-    text-align:center;
-    height:50px;
-    width:100%;
-    position:fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-    color:white;
-    border:1px solid black;
+
+nav {
+  background-color: #000;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #FFF;
+  border: 1px solid #000;
 }
 
 
-li{
-    display: inline-block;
-    padding:10px;
-    font-size:20px;
-    font-weight:bold;
-    top:15px;
-
+li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 15px;
 }
 
-.email{
-    text-align:left;
-    font-size:16px;
-
-}
-h1{
-    font-family:Ariel;
-    color:#b30000;
-    text-align:center;
-    margin-top:50px;
-    width:100%;
-
-}
-.hello{
-    display:inline-block;
-}
-.welcome{
-    margin-top:15px;
-    text-align:center;
-    display:inline-block;
-    width:100%;
+.email {
+  text-align: left;
+  font-size: 16px;
 }
 
-h2, p{
-    color:black;
-    text-align:center;
-    margin-top:15px;
+h1 {
+  font-family: "Ariel", sans-serif;
+  color: #b30000;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
 }
 
-.hello{
-    text-align:left;
+.hello {
+  display: inline-block;
+  text-align: left;
 }
 
-#login{
-    width:400px;
-
-}
-#stayleft{
-    float:left;
-    margin-top:0px;
-    display:inline-block;
+.welcome {
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
-footer{
-    background-color:black;
-    height:40px;
-    text-align:center;
-    position:fixed;
-    height:50px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    margin-bottom:0px;
-    color:white;
-    border:1px solid black;
-}
-h5 {
-    text-align:center;
-}
-.img-responsive{
-    align:middle;
-    width:100%;
-    margin:auto;
+h2, p {
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.form-group{
-    text-align:left;
-    font-size:16px;
-    float:left;
+#login { width: 400px; }
 
+#stayleft {
+  float: left;
+  margin-top: 0;
+  display: inline-block;
 }
 
-.myImage{
-    width:80%;
+footer {
+  background-color: #000;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  color: #FFF;
+  border: 1px solid #000;
 }
 
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h5 { text-align: center; }
+
+.img-responsive {
+  align: middle;
+  width: 100%;
+  margin: auto;
+}
+
+.form-group {
+  text-align: left;
+  font-size: 16px;
+  float: left;
+}
+
+.myImage{ width: 80%; }
