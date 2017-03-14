@@ -2,6 +2,7 @@ body {
   background-color: #FFF;
   margin: 15px;
   color: #000;
+  background-color:gainsboro;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
   right: 0px;
   color: #FFF;
   border: 1px solid #000;
+  z-index:999;
 }
 
 
@@ -65,18 +67,20 @@ h2, p {
   display: inline-block;
 }
 
+.btn-default {
+  background-color:#f49b42;
+  float:center;
+}
 footer {
-  background-color: #000;
-  height: 40px;
-  text-align: center;
-  position: fixed;
-  height: 50px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 0;
-  color: #FFF;
-  border: 1px solid #000;
+    background-color: #000;
+    text-align: center;
+    height: 30px;
+    color: #FFF;
+    border: 1px solid #000;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom:0;
 }
 
 h5 { text-align: center; }
@@ -86,7 +90,12 @@ h5 { text-align: center; }
   width: 100%;
   margin: auto;
 }
+ #racebike {
+  width:60%;
+  height:30%;
+  margin-bottom:15px;
 
+ }
 .form-group {
   text-align: left;
   font-size: 16px;
