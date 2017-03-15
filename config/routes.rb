@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/static_pages/login'
   #root 'welcome#index'
-  root 'static_pages#index'
+  root 'static_pages#landing_page'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
