@@ -1,34 +1,30 @@
 <h2>Featured Product:</h2>
-<%= @featured_product.name %>
+<!--<%= @featured_product.name unless @featured_product.nil? %>-->
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active dot" style=(color:red;)></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="..." alt="...">
+    <% @products.each do |product| %>
+    <div class="item <%= " active" if product == @products.first %>">
+      <p class="full image" style=(width:100%; height:100%;)><%= image_tag(product.image_url) %></p>
+
       <div class="carousel-caption">
-        ...
+       <p class="Bike name" style=(color:blue; font-size:18px;)><%= product.name %></p>
       </div>
     </div>
-    <div class="item">
-      <img src="..." alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
+    <% end %>
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style=(color:maroon;)></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
@@ -39,6 +35,7 @@
 
 
 
-<% unless @featured_product.blank? %>
+
+<!--<% unless @featured_product.blank? %>
   <%= @featured_product.name %>
-<% end %>
+<% end %>-->
