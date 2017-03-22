@@ -44,20 +44,17 @@
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
-
   <!-- Wrapper for slides -->
   <!--<div class="carousel-inner" role="listbox">
     <% @products.each do |product| %>
     <div class="item <%= " active" if product == @products.first %>">
       <p class="full image"><%= image_tag(product.image_url) %></p>
-
       <div class="carousel-caption">
        <p class="Bike name" style=(color:blue; font-size:18px;)><%= product.name %></p>
       </div>
     </div>
     <% end %>
   </div>
-
   <!-- Controls -->
   <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" >
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style=(color:maroon;)></span>
@@ -68,10 +65,3 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-
-
-<!--<% unless @featured_product.blank? %>
-  <%= @featured_product.name %>
-<% end %>-->

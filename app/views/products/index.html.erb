@@ -8,7 +8,7 @@
   <div class="container">
     <div class="row">
     <% @products.each do |product|%>
-      <%= render @products %>
+      <%= render partial: "shared/product", locals: {product: product} %>
     </div><!--end of row-->
   <% end %>
   </div><!--end of container-->
