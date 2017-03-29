@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :products
 
-
+  get '/products/:id(.:format)', to: 'products#show'
 
   get 'static_pages/about'
 
@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/static_pages/login'
   #root 'welcome#index'
-  root 'static_pages#landing_page'
+  root 'products#index'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
