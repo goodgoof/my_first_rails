@@ -1,137 +1,153 @@
-body {
-  background-color: gainsboro;
-  color: #000;
-  padding-top:50px;
-}
-
-.search {
-  background-color:orange;
-}
-/*nav {
-  background-color: black;
-  text-align: center;
-  height: 50px;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  color: #FFF;
-  border: 1px solid #000;
-  z-index:999;
-}*/
-
-#navbar {
-  text-align:center;
-  margin-top:0px;
-  color:orange;
-  width:100%
-}
-
-.navbar-header {
-  background-color:black;
-}
-li {
-  display: inline-block;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  top: 15px;
-}
-
-.email {
-  text-align: left;
-  font-size: 16px;
-  margin-left:15px;
-}
-
-.google map {
-  margin-left:15px;
-}
-h1 {
-  font-family: "Ariel", sans-serif;
-  color: #b30000;
-  text-align: center;
-  margin-top: 50px;
-  width: 100%;
-}
-
-.hello {
-  display: inline-block;
-  text-align: left;
-}
-
-.welcome {
-  margin-top: 15px;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-}
-
-h2, p {
-  color: #000;
-  text-align: center;
-  margin-top: 15px;
-}
-
-#login { width: 400px; }
-
-#stayleft {
-  float: left;
-  margin-top: 0;
-  display: inline-block;
-}
-
-.btn-default {
-  background-color:#f49b42;
-  float:center;
-}
-footer {
-    background-color: gainsboro;
-    text-align: center;
-    height: 30px;
-    color: #FFF;
-
-    position: fixed;
-    left: 0;
-    right:0;
-    bottom:0;
-}
-
-h5 { text-align: center; }
-
-.img-responsive {
-  align: middle;
-  width: 100%;
-  margin: auto;
-}
- #racebike {
-  width:60%;
-  height:30%;
-  margin-bottom:15px;
-
- }
-
-.form-group {
-  text-align: left;
-  font-size: 16px;
-  float: left;
-}
-
-.myImage{ width: 80%; }
-
-.full image {
-  width:100%;
-  margin:-15px;
-  margin-top:40px;
-  height:80%;
-
-}
-
-.carousel-caption  {
-  bottom: 150px;
-  font-size: 2.5em;
+ @media (min-width: 320px) {
+    body {
+    background-color: #113359;
+    color: #e1dce2;
+    padding-top:50px;
   }
+}
+
+  .search {
+    background-color:orange;
+  }
+  /*nav {
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: #FFF;
+    border: 1px solid #000;
+    z-index:999;
+  }*/
+
+
+@media (min-width: 320px) {
+   .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+    text-align: center;
+    line-height: 0px;
+    }
+}
+
+  #navbar {
+    text-align:center;
+    margin-top:0px;
+    color:orange;
+    width:100%
+  }
+
+  .navbar-header {
+    background-color:black;
+  }
+  li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    top: 15px;
+  }
+
+  .email {
+    text-align: left;
+    font-size: 14px;
+    margin-left:15px;
+  }
+
+  .google map {
+    margin-left:15px;
+  }
+  h1 {
+    font-family: "Ariel", sans-serif;
+    color: #e1dce2 ;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .hello {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .welcome {
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+
+  h2, p {
+    color: #000;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #login { width: 400px; }
+
+  #stayleft {
+    float: left;
+    margin-top: 0;
+    display: inline-block;
+  }
+
+  .btn-default {
+    background-color:#f49b42;
+    float:center;
+  }
+  footer {
+      background-color: gainsboro;
+      text-align: center;
+      height: 30px;
+      color: #FFF;
+
+      position: fixed;
+      left: 0;
+      right:0;
+      bottom:0;
+  }
+
+  h5 { text-align: center; }
+
+  .img-responsive {
+    align: middle;
+    width: 100%;
+    margin: auto;
+  }
+   #racebike {
+    width:60%;
+    height:30%;
+    margin-bottom:15px;
+
+   }
+
+  .form-group {
+    text-align: left;
+    font-size: 16px;
+    float: left;
+  }
+
+  .myImage{ width: 80%; }
+
+  .full image {
+    width:100%;
+    margin:-15px;
+    margin-top:40px;
+    height:80%;
+
+  }
+
+  .carousel-caption  {
+    bottom: 150px;
+    font-size: 2.5em;
+    }
 
 
 

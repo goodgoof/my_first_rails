@@ -35,12 +35,12 @@
             <li><%=link_to "Products",products_path %></li>
             <li><%=link_to "Contact",static_pages_contact_path %></li>
             <li><%=link_to "Login",static_pages_login_path %></li>
-          </ul>
-          <%= form_tag("/products", method: "get") do %>
-        <%= label_tag(:q, "Search for:") %>
-        <%= text_field_tag(:q) %>
-        <%= submit_tag("Search") %>
+            <li><%= form_tag("/products", method: "get") do %>
+              <%= label_tag(:q, "Search for:") %>
+              <%= text_field_tag(:q) %>
+              <%= submit_tag("Search") %></li>
         <% end %>
+        </ul>
         </div><!--/.nav-collapse -->
       </div><!--container-->
     </nav>
