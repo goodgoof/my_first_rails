@@ -1,9 +1,13 @@
 body {
   background-color: gainsboro;
   color: #000;
+  padding-top:50px;
 }
 
-nav {
+.search {
+  background-color:orange;
+}
+/*nav {
   background-color: black;
   text-align: center;
   height: 50px;
@@ -15,9 +19,18 @@ nav {
   color: #FFF;
   border: 1px solid #000;
   z-index:999;
+}*/
+
+#navbar {
+  text-align:center;
+  margin-top:0px;
+  color:orange;
+  width:100%
 }
 
-
+.navbar-header {
+  background-color:black;
+}
 li {
   display: inline-block;
   padding: 10px;
@@ -121,7 +134,5 @@ h5 { text-align: center; }
   }
 
 
-.dot {
-  color:maroon;
-}
+
 

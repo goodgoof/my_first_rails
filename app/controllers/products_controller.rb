@@ -3,8 +3,14 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+
   def index
+    if search_term= params[:q]
+      @products = Product.where (search_term)
+    # return out filtered results here
+    else
     @products = Product.all
+    end
   end
 
    #GET /products/1
@@ -77,3 +83,4 @@ class ProductsController < ApplicationController
   end
 
 end
+

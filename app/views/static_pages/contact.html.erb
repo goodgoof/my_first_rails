@@ -1,11 +1,13 @@
 
-<h1>Contact<h1>
+<h1>Say Hello ! <h1>
 <!--StaticPages#contact-->
 
-<!--<%= image_tag("TrekBikes.jpg",class:"img-responsive myImage",:align=>"middle") %>-->
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
 
     <!--important to talk about yourself-->
-      <div class="row" id="contact">
+    <div class="row" id="contact">
        <div class ="col-lg-4 col-md-4">
         <p class="email"><span class="glyphicon glyphicon-envelope"></span> Email <a href="giftrocket.com">anjalidsharma8@gmail.com</a> <br>  <span class="glyphicon glyphicon-earphone"></span> XXX-XXX-XXXX <br> Address: 444 Washington Blvd,<br> Jersey City,<br> NJ-07310</p>
 
@@ -14,34 +16,38 @@
       </div>
       <div class ="col-lg-8 col-md-8">
         <form>
-          <h2 class="Hello"> Say Hello!</h2>
             <div class="form-inline">
               <div class="form-group">
-                <label class="col-lg-6" for="name">Name</label>
-                  <input class="form-control" type="text" minlength="10" id="name" placeholder="Your name" >
+                <label class="col-lg-6"</label>
+                 <%= label_tag :name %>
+      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
               </div><!--end of form group-->
 
               <div class="form-group">
-                <label class="col-lg-6" for="phone number">Phone</label>
-                  <input class="form-control" type="number" maxlength="10" id="phone_number" placeholder="Your Phone Nmber">
+                <label class="col-lg-6"></label>
+                  <%= label_tag :phone %>
+      <%= telephone_field_tag :phone, nil, class: "form-control" , placeholder: "Enter Number" %>
+
               </div>
 
             </div><!--end of form inline-->
 
             <div class="form-group" id="Email">
-              <label for ="Email"> *Email</label>
-                <input class="form-control" type="email" required="required" placeholder="Your email"><p id="visible-email"></p>
+              <label for ="Email">*</label>
+              <%= label_tag :email, "Email Address" %>
+      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
             </div>
 
-            <div class="form-group">
-              <label for ="message"> *Message</label>
-                <textarea  class="form-control" placeholder=" Your message here" id="message" style="resize:none" cols="100" rows="5" minlength=50 required="required"></textarea>
+            <div class="form-group col-lg-6">
+              <label for ="message">*</label>
+                <%= label_tag :message %>
+      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
                 <p id="visible-comment"></p><p id="char-count"></p>
-                  <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                  <%= submit_tag "Send"  %>
 
-            </div>
+              <% end %>
 
-
+            </div><!--form group-->
         </form>
      </div><!--end of class col-lg-8-->
     </div><!---end of row-->
