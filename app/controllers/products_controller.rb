@@ -13,7 +13,7 @@ class ProductsController < ApplicationController
 
     else
         #postgres LIKE version
-        products = Product.where("name ilike ?", "%#{search_term}%")
+        @products = Product.where("name ilike ?", "%#{search_term}%")
       end
 
     else
