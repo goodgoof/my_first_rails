@@ -8,12 +8,12 @@ class ProductsController < ApplicationController
     if params[:q] 
       search_term = params[:q]
     if(Rails.env.development?)
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+       @products = Product.where("name LIKE ?", "%#{search_term}%")
     # return out filtered results here
 
     else
         #postgres LIKE version
-        products = product.where("name ilike ?", "%#{search_term}%")
+        products = Product.where("name ilike ?", "%#{search_term}%")
       end
 
     else
