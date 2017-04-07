@@ -101,7 +101,7 @@
 
   .btn-default {
     background-color:#f49b42;
-    float:center;
+    float:none;
   }
   footer {
       background-color: gainsboro;
@@ -130,9 +130,13 @@
    }
 
   .form-group {
-    text-align: left;
+    text-align:left;
     font-size: 16px;
-    float: left;
+    float: none;
+    width: 250px;
+    top:50%;
+    left:50%;
+
   }
 
   .myImage{ width: 80%; }

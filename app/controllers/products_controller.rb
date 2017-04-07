@@ -5,9 +5,17 @@ class ProductsController < ApplicationController
   # GET /products.json
 
   def index
-    if search_term= params[:q]
-      @products = Product.where (search_term)
+    if params[:q] 
+      search_term = params[:q]
+    if(Rails.env.development?)
+      @products = Product.where("name LIKE ?", "%#{search_term}%")
     # return out filtered results here
+
+    else
+        #postgres LIKE version
+        products = product.where("name.ilike ?", "%#{search_term}%")
+      end
+
     else
     @products = Product.all
     end

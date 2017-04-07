@@ -6,48 +6,35 @@
 
 <%= form_tag("/static_pages/thank_you") do %>
 
-    <!--important to talk about yourself-->
-    <div class="row" id="contact">
+
+<div class="row" id="contact">
        <div class ="col-lg-4 col-md-4">
-        <p class="email"><span class="glyphicon glyphicon-envelope"></span> Email <a href="giftrocket.com">anjalidsharma8@gmail.com</a> <br>  <span class="glyphicon glyphicon-earphone"></span> XXX-XXX-XXXX <br> Address: 444 Washington Blvd,<br> Jersey City,<br> NJ-07310</p>
+          <p class="email"><span class="glyphicon glyphicon-envelope"></span> Email <a href="giftrocket.com">anjalidsharma8@gmail.com</a> <br>  <span class="glyphicon glyphicon-earphone"></span> XXX-XXX-XXXX <br> Address: 444 Washington Blvd,<br> Jersey City,<br> NJ-07310</p>
 
         <div id="map"></div>
-        <iframe class="google map" width="380" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=restaurants%20near%20444%20washington%20blvd%20jersey%20city&key=AIzaSyDWcluwqS23lxAzPuHt6khjjokA3qBSdJc" allowfullscreen></iframe>
-      </div>
+          <iframe class="google map" width="280" height="200" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=restaurants%20near%20444%20washington%20blvd%20jersey%20city&key=AIzaSyDWcluwqS23lxAzPuHt6khjjokA3qBSdJc" allowfullscreen></iframe>
+      </div><!--end of col-->
       <div class ="col-lg-8 col-md-8">
-        <form>
-            <div class="form-inline">
-              <div class="form-group">
-                <label class="col-lg-6"</label>
-                 <%= label_tag :name %>
-      <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
-              </div><!--end of form group-->
-
-              <div class="form-group">
-                <label class="col-lg-6"></label>
-                  <%= label_tag :phone %>
-      <%= telephone_field_tag :phone, nil, class: "form-control" , placeholder: "Enter Number" %>
-
-              </div>
-
-            </div><!--end of form inline-->
-
-            <div class="form-group" id="Email">
-              <label for ="Email">*</label>
+         <div class="col-md-4">
+            <div class="form-group center">
+              <%= label_tag :name %>
+              <%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+            </div>      
+            <div class="form-group center">
               <%= label_tag :email, "Email Address" %>
-      <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+              <%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
             </div>
+            <div class="form-group center">
+              <%= label_tag :message %>
+              <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+            </div>   
+            
+            <%= submit_tag "Send" %>   
+        <% end %> 
+        
+        </div><!--end of col-lg 8-->
+        
+        </div><!--end of row-->
+        
 
-            <div class="form-group col-lg-6">
-              <label for ="message">*</label>
-                <%= label_tag :message %>
-      <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
-                <p id="visible-comment"></p><p id="char-count"></p>
-                  <%= submit_tag "Send"  %>
-
-              <% end %>
-
-            </div><!--form group-->
-        </form>
-     </div><!--end of class col-lg-8-->
-    </div><!---end of row-->
+    
