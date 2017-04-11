@@ -16,7 +16,11 @@
     <div id="fb-root"></div>
     <!-- Fixed navbar -->
 
-    <p class="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice" class="alert alert-info"><%= notice %></p>
+<% elsif alert %>
+  <p id="alert" class="alert alert-info"><%= alert %></p>
+<% end %>
        
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid" id ="nav_center">
@@ -35,15 +39,22 @@
             <li><%=link_to "About",static_pages_about_path %></li>
             <li><%=link_to "Products",products_path %></li>
             <li><%=link_to "Contact",static_pages_contact_path %></li>
-            <li><%=link_to "Login",static_pages_login_path %></li>
-            <li><%= form_tag("/products", method: "get", class: "navbar-form") do %>
+            <li>
+              <% if user_signed_in? %>
+               <%= link_to("Logout", destroy_user_session_path, :method => :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          
+          <li><%= form_tag("/products", method: "get", class: "navbar-form navbar-right") do %>
               <%= label_tag(:q, "") %>
               <%= text_field_tag(:q, "", class: "form-control") %>
               <%= submit_tag("Search", class: "btn btn-default btn-primary btn-sm") %>
             <% end %>
-              
             </li>
-        </ul>
+            
+          </ul>
         </div><!--/.nav-collapse -->
       </div><!--container-->
     </nav>
