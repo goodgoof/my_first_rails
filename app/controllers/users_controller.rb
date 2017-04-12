@@ -12,6 +12,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    if current_user != @user
+      redirect_to root_url, alert: "Sorry, this isn't your profile."
+    end
   end
 
   # GET /users/new
@@ -21,7 +24,10 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    if current_user != @user
+      redirect_to root_url, alert: "Sorry, you can't edit someone else's profile."
   end
+end
 
   # POST /users
   # POST /users.json
