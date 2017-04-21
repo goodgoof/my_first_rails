@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/static_pages/login'
 
+  get '/users/'
+
   post '/static_pages/thank_you'
   #root 'welcome#index'
   root 'static_pages#landing_page'
