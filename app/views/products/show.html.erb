@@ -2,49 +2,54 @@
 
 <div class="container image">
   <div class="row">
-    <div class="col-lg-6  center">
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  
-    <br><strong> Description:</strong>
-    <%=@product.description %>
-  </p>
-  <p><strong>Image_url:</strong></p>
+    <div class="col-sm-8 col-lg-6">        
 
-  <p class="thumbnail">
-    
-    <%= image_tag @product.image_url unless @product.image_url.nil? %>
-  </p>
-
-  <p>
-    <strong>Color:</strong>
-    <%= @product.color %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </p>
+        <p class="thumbnail">
+      
+        <%= image_tag @product.image_url unless @product.image_url.nil? %>
+        </p>
     </div><!--end of col-->
+    
+    <div class=" col-sm-2 col-lg-4">
+        <p>
+        <strong>Name:</strong><%= @product.name %>
+        </p>
+      
+        <strong> Description:</strong><%=@product.description %>
+        
+        <p><strong>Image_url:</strong></p>
+
+          <strong>Color:</strong><%= @product.color %>
+          
+          <strong>Price:</strong><%= @product.price %>
+        
+          
+    </div><!--end of col-->    
   </div><!--end of row-->
-</div><!--end of container image-->
-<% if signed_in? %>
-  <h4>Add a review:</h4>
-  <%= form_for([@product, @product.comments.build]) do |f| %>
-    <p>
-      <%= f.label :body, "Comments" %><br>
-      <%= f.text_area :body %>
-    </p>
-    <p>
-      <%= f.label :rating %><br>
-      <%= f.text_field :rating, class: "rating" %>
-    </p>  
-    <p>
-      <%= f.submit "Submit" %>
-    </p>
-  <% end %>
-<% end %>
+
+  <div class="row">
+    
+      <form class="comment">
+        <% if signed_in? %>
+        <h4>Add a review:</h4>
+        <%= form_for([@product, @product.comments.build]) do |f| %>
+        <p>
+        <%= f.label :body, "Comments" %><br>
+        <%= f.text_area :body, class: "form-control" %>
+        </p>
+
+        <p>
+        <div class="rating"></div>
+        </p>  
+        
+        <p>
+        <%= submit_tag("Submit", class: "btn btn-default btn-primary btn-sm")  %>
+        </p>
+      <% end %>
+    <% end %>
+    </div><!--endof form-group-->
+    </div><!--end of col-lg-6-->
+  </div><!--end of container image-->
 
 <div class="product-reviews">
     <% @comments.each do |comment| %>
