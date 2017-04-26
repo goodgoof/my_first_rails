@@ -1,0 +1,380 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+@media (min-width: 768px) {
+  /* line 2, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* line 6, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  body {
+    margin: auto;
+    color: white;
+    background-color: black;
+  }
+
+  /* line 13, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  .field,
+  .actions {
+    text-align: center;
+  }
+
+  /* line 18, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  .row {
+    margin-top: 0px;
+    width: 100%;
+    height: 40%;
+  }
+
+  /* line 25, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  .container {
+    margin-top: 0px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* line 33, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  .SED {
+    padding: 2px;
+  }
+
+  /* line 35, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/products.scss */
+  #productName {
+    margin: auto;
+    font-size: 16px;
+    padding-top: 5px;
+  }
+}
+/* line 1, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 2, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: white;
+  color: black;
+  padding-top: 50px;
+}
+
+/* line 9, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.search {
+  background-color: orange;
+}
+
+/*nav {
+  background-color: black;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  color: #FFF;
+  border: 1px solid #000;
+  z-index:999;
+}*/
+@media (min-width: 320px) {
+  /* line 28, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 35, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+/* line 41, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+#navbar {
+  text-align: center;
+  margin-top: 0px;
+  color: orange;
+  width: 100%;
+}
+
+/* line 48, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.navbar-header {
+  background-color: black;
+}
+
+/* line 51, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  top: 15px;
+}
+
+/* line 59, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.email {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* line 65, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.google map {
+  margin-left: 15px;
+}
+
+/* line 68, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: "Ariel", sans-serif;
+  color: #e1dce2;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* line 76, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.hello {
+  display: inline-block;
+  text-align: left;
+}
+
+/* line 81, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.welcome {
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 88, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h2, p {
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 96, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+#stayleft {
+  float: left;
+  margin-top: 0;
+  display: inline-block;
+}
+
+/* line 102, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.btn-default {
+  background-color: #f49b42;
+  float: none;
+}
+
+/* line 106, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+footer {
+  background-color: purple;
+  text-align: center;
+  height: 30px;
+  color: #FFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 118, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+h5 {
+  text-align: center;
+}
+
+/* line 120, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.img-responsive {
+  align: middle;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 125, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+#racebike {
+  width: 60%;
+  height: 30%;
+  margin-bottom: 15px;
+}
+
+/* line 132, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  text-align: left;
+  font-size: 16px;
+  float: none;
+  width: 250px;
+  top: 50%;
+  left: 50%;
+}
+
+/* line 142, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.myImage {
+  width: 80%;
+}
+
+/* line 144, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.full image {
+  width: 100%;
+  margin: -15px;
+  margin-top: 40px;
+  height: 80%;
+}
+
+/* line 152, /Users/anuragdhanwantri/my_first_rails/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  bottom: 150px;
+  font-size: 2.5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

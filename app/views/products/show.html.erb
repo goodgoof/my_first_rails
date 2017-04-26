@@ -15,14 +15,14 @@
         <strong>Name:</strong><%= @product.name %>
         </p>
       
-        <strong> Description:</strong><%=@product.description %>
+        <p><strong> Description:</strong><%=@product.description %></p>
         
         <p><strong>Image_url:</strong></p>
 
-          <strong>Color:</strong><%= @product.color %>
+          <p><strong>Color:</strong><%= @product.color %></p>
           
-          <strong>Price:</strong><%= @product.price %>
-        
+          <p><strong>Price:</strong><%= @product.price %></
+        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
           
     </div><!--end of col-->    
   </div><!--end of row-->
@@ -45,11 +45,12 @@
         <p>
         <%= submit_tag("Submit", class: "btn btn-default btn-primary btn-sm")  %>
         </p>
+        </form>
       <% end %>
     <% end %>
-    </div><!--endof form-group-->
-    </div><!--end of col-lg-6-->
-  </div><!--end of container image-->
+  </div><!--endof row group-->
+    <!--end of col-lg-6-->
+</div><!--end of container image-->
 
 <div class="product-reviews">
     <% @comments.each do |comment| %>
