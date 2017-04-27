@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users
-  resources :products
+  resources :products do
+    resources :comments
+  end
+  resources :users
 
 
   get 'static_pages/about'
@@ -14,10 +17,8 @@ Rails.application.routes.draw do
 
   get '/static_pages/login'
 
-  get '/users/'
-
   post '/static_pages/thank_you'
-  #root 'welcome#index'
+  
   root 'static_pages#landing_page'
 
   resources :orders, only: [:index, :show, :create, :destroy]
