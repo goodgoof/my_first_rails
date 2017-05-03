@@ -1,27 +1,19 @@
   <div class="row">
-    
-      <form class="comment">
-        <% if signed_in? %>
+    <% if signed_in? %>
         <h4>Add a review:</h4>
-        <%= form_for([@product, @product.comments.build]) do |f| %>
-        <p>
-        <%= f.label :body, "Comments" %><br>
-        <%= f.text_area :body, class: "form-control" %>
-        </p>
 
-        <p>
-        <div class="rating"></div>
-        </p>  
-        
-        <p>
-        <%= submit_tag("Submit", class: "btn btn-default btn-primary btn-sm")  %>
-        </p>
-        </form>
-      <% end %>
+        <%= form_for([@product, @product.comments.build], remote: true) do |f| %>
+            <%= f.label :body, "Comments" %><br>
+            <%= f.text_area :body, class: "form-control" %>
+
+            <p>
+                <div class="rating"></div>
+            </p>
+
+            <%= f.submit("Submit", class: "btn btn-default btn-primary btn-sm")  %>
+        <% end %>
     <% end %>
-  </div><!--endof row group-->
-    <!--end of col-lg-6-->
-</div><!--end of container image-->
+</div>
 
 
 
