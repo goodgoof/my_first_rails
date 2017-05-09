@@ -5,4 +5,22 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 	has_many :orders
 	has_many :comments
+
+	def confirm! 
+		welcome_email
+		super
+	end
+
+	def after_confirmation
+  		welcome_email
+	end
+
+	# private methods
+	private
+
+	def welcome_email
+		UserMailer.welcome_email(self).deliver
+	end
+
+
 end
