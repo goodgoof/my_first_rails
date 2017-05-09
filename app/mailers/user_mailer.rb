@@ -9,8 +9,5 @@ class UserMailer < ApplicationMailer
   end
 
   # send Welcome Email once user confirms the account
-  def welcome_email(user)
-  	@user = user
-  	mail (to: 2user.email, subject: "Welcome to Hello-Bikes! We promise you fun times with Hello-Bikes.")
-  end
+  
 end
