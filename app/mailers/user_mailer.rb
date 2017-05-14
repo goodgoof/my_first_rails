@@ -9,5 +9,10 @@ class UserMailer < ApplicationMailer
   end
 
   # send Welcome Email once user confirms the account
+  def welcome(user)
+  @appname = "Hello-Bikes"
+  mail( :to => user.email,
+        :subject => "Welcome to #{@appname}!")
+  end
   
 end

@@ -2,10 +2,10 @@ require "rails_helper"
 
 
 describe UsersController, :type => :controller do 
-	let (:user) {User.create!(email: 'peter@example.com', password: '1234567890')}
-  	let (:different_user) {User.create!(email: 'quincy@medium.com', password: '0987654321')}
-    #@user = FactoryGirl.create!(:user)
-    #@user2 = FactoryGirl.create!(:user)
+	#let (:user) {User.create!(email: 'peter@example.com', password: '1234567890')}
+  	#let (:different_user) {User.create!(email: 'quincy@medium.com', password: '0987654321')}
+    user = FactoryGirl.create(:user)
+    user2 = FactoryGirl.create(:user)
     	describe 'GET users#show' do
 
       		context 'User is logged in' do
@@ -13,7 +13,7 @@ describe UsersController, :type => :controller do
       	  			sign_in user
 			end
 
-        		it 'loads correct user details' do
+        		it 'loads correct @user details' do
         			get :show, params: {id: user.id}
         			expect(response).to have_http_status(200)
         			expect(assigns(:user)).to eq user
@@ -28,9 +28,9 @@ describe UsersController, :type => :controller do
 			end
 
 
-   	   		context "user tries to GET #show from user2" do
+   	   		context "user tries to GET #show from different_user" do
    	   			before do
-   	   			sign_in different_user
+   	   			sign_in user2
        			end
 
        			it 'is not allowed to view user #show' do
