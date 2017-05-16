@@ -4,7 +4,7 @@
             <p class ="thumbnail">
               <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") unless @product.image_url.nil? %>
             </p>
-        </div><!--end of col-->
+        </div> <!--end of col-->
         
         <div class=" col-sm-2 col-lg-4">
             <p>
@@ -34,12 +34,6 @@
             </div>
             
         </div> <!--end of col--> 
-        <div>
-              <%= form_tag "/payments/create" do %>
-              <%= render partial: "shared/stripe_checkout_button" %>
-              <% end %>
-            </div>
-        
 
         <div class="col-sm-2">
           <div class="link-to-product">
