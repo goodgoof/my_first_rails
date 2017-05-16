@@ -1,3 +1,7 @@
+<% if notice %>
+ <p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
+
 <div class ="container">
   <div class ="row">
         <div class ="col-sm-8 col-lg-6">        
@@ -41,9 +45,9 @@
             <% if signed_in? && current_user.admin? %>
             <%= link_to 'Edit', edit_product_path(@product) %> 
             <% end %>
-            
           </div>
-        </div> <!--end of col-->  
+        </div> <!--end of col--> 
+
        </div> <!--end of row-->      
   </div> <!--end of container-->
 
