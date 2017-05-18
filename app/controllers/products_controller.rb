@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
   # GET /products.json
 
   def index
+    byebug
     if params[:q] 
       search_term = params[:q]
     if(Rails.env.development?)
@@ -27,6 +28,8 @@ class ProductsController < ApplicationController
 
    #GET /products/1
 
+
+
    #GET /products/1.json
   def show
     @product = Product.find(params[:id])
@@ -36,6 +39,7 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
+    
     @product = Product.new
   end
 
