@@ -5,6 +5,9 @@ $(document).on('turbolinks:load', function(){
     	readOnly: true,
     	score: function() {
       		return $(this).attr("data-score");
+    $(".img-zoom").elevateZoom();
     }
   });
 });
+    
+    
