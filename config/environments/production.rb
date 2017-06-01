@@ -52,7 +52,7 @@ Rails.application.configure do
   config.log_tags = [ :request_id ]
 
   # Use a different cache store in production.
-  config.cache_store = :dalli_store, 
+  config.cache_store = :dalli_store, nil, { :namespace => NAME_OF_RAILS_APP, :expires_in => 1.day, :compress => true,
                        (ENV["MEMCACHIER_SERVERS"] || "").split(","),
                        {
                         :username => ENV["MEMCACHIER_USERNAME"],
@@ -61,7 +61,6 @@ Rails.application.configure do
                         :socket_timeout => 1.5,
                         :socket_failure_delay => 0.2
                       }
-                    
   
   # config.cache_store = :mem_cache_store
 
