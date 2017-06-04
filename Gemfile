@@ -53,6 +53,7 @@ group :development, :test do
   gem "factory_girl_rails", "~> 4.0"
   gem "brakeman", :require => false
   gem 'dalli'
+  gem 'redis-rails'
 end
 
 group :development do

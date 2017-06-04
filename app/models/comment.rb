@@ -7,4 +7,5 @@ class Comment < ApplicationRecord
   
   validates :body, :user, :product, presence: true
   validates :rating, numericality: { only_integer: true}
+  
 end
