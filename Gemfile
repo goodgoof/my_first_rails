@@ -43,6 +43,8 @@ gem 'cancancan', '~> 1.10'
 
 gem 'will_paginate', '~> 3.1.1'
 gem 'stripe'
+gem 'dalli'
+gem 'redis-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,8 +54,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem "factory_girl_rails", "~> 4.0"
   gem "brakeman", :require => false
-  gem 'dalli'
-  gem 'redis-rails'
+  
 end
 
 group :development do
