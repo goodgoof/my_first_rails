@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
+  mount ActionCable.server => '/cable'
   devise_for :users, :controllers => { :registrations => "user_registrations" }
   resources :users
   resources :products do
     resources :comments
   end
-  
-  mount ActionCable.server => '/cable'
 
   get 'static_pages/about'
 
