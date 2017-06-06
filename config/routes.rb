@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :comments
   end
   
-
+  mount ActionCable.server => '/cable'
 
   get 'static_pages/about'
 
