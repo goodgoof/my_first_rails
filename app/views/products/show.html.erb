@@ -3,7 +3,7 @@
 <% end %>-->
 
 <div class ="container">
-  <div class ="row">
+  <div class ="row" data-product-id="<%= @product.id %>">
         <div class ="col-sm-8 col-lg-6">        
             <p class ="thumbnail">
               <%= image_tag(@product.image_url, width: "350", class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") unless @product.image_url.nil? %>
@@ -58,15 +58,15 @@
 
        </div> <!--end of row-->      
   </div> <!--end of container-->
-  
+
 <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
-<div>
-    <%= render 'new_comment' %>
-    <%= render 'comments' %>
+  <div class="new_comment">
+      <%= render 'new_comment' %>
+      <%= render 'comments' %>
 
-   <%= will_paginate @comments %>
-   <% @product.comments.rating_desc.first %>
-</div>
+     <%= will_paginate @comments %>
+     <% @product.comments.rating_desc.first %>
+  </div>
  
       
