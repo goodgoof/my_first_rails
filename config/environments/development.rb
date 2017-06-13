@@ -11,6 +11,9 @@ Rails.application.configure do
 
   # For channel generator in javascript.
   config.app_generators.javascript_engine = :javascript
+
+  #for Active Job Async
+  config.active_job.queue_adapter = :async
   
   # Show full error reports.
   config.consider_all_requests_local = true
