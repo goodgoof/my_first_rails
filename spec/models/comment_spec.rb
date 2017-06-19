@@ -1,21 +1,31 @@
 require "rails_helper"
   
   describe Comment do 
-  	before do
-  		@user = User.create!(email:"test@test.com", password: "123456")
-		  @product = Product.create!(name:"race bike", description:"24", price: "780.0", color: "red")
-      @product.comments.create!(rating: 5, user: @user, body: "beautiful bike!", product_id: @product.id)
+    context "when creating comment " do
+  	  before do
+  		  @user = FactoryGirl.build(:user)
+		    @product = FactoryGirl.build(:product)
+        
 	 end
 
-  	context "when comment is entered"
-
   		it "is valid with a body,user, product and rating" do
-  			expect(Comment).to_be_valid
+  			expect(Comment.new(body: "Beautiful bike", user: @user, product: @product, rating: 4)).to be_valid
   	end
-
-  	context "body empty" do
-    it "is not valid"do
+  	
+    it "is not valid when body is empty" do
       expect(Comment.new(body: "")).not_to be_valid
+    end
+
+    it "is not valid when product is not present" do
+      expect(Comment.new(body: "beautiful bike", user: @user, rating: 5)).not_to be_valid
+    end
+    
+    it "is not valid when rating is not numerical" do
+      expect(Comment.new( rating: "James")).not_to be_valid
+    end
+
+    it "is not valid when user is not signed in" do
+      expect(Comment.new( body: "Beautiful bike", product: @product, rating: 4)).not_to be_valid
     end
   end
 end
