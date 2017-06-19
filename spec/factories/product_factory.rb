@@ -6,6 +6,7 @@ FactoryGirl.define do
 		description "26 inch"
 		price $780
 		color "red"
+		image_url "https://www.pinterest.com/pin/494270127825878851"
 	end
 
   end
