@@ -4,7 +4,7 @@ FactoryGirl.define do
 	factory :product do
 		name "James"
 		description "26 inch"
-		price $780
+		price 780.00
 		color "red"
 		image_url "https://www.pinterest.com/pin/494270127825878851"
 	end

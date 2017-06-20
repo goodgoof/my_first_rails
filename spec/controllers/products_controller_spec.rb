@@ -31,14 +31,14 @@ describe ProductsController, :type => :controller do
 
   context 'Post /update/price' do
     before do
-      @product = FactoryGirl.build(:product)
-      @user = FactoryGirl.build(:admin)
+      @product = FactoryGirl.create(:product)
+      @user = FactoryGirl.create(:admin)
       sign_in @user
     end
       it 'successfully updates product price' do
-        @attr ={name: "James", image_url: "https://www.pinterest.com/pin/494270127825878851", id: @product.id, price: "$180.0"}
-          post :update, id: @product.id, product: @attr 
-            expect(price).to eq 180.0
+        @attr ={name: "James", image_url: "https://www.pinterest.com/pin/494270127825878851", id: @product.id, price: 180.0}
+          patch :update, id: @product.id, product: @attr 
+            expect(@product.reload.price).to eq 180.0
           
     end
   end
@@ -46,9 +46,9 @@ describe ProductsController, :type => :controller do
   context "DELETE /destroy" do
 
     before do
-      @product = FactoryGirl.build(:product, :price)
-      @user = FactoryGirl.build(:admin)
-      sign_in user
+      @product = FactoryGirl.create(:product)
+      @user = FactoryGirl.create(:admin)
+      sign_in @user
     end
 
     it "should allow admin to delete product" do
