@@ -37,6 +37,19 @@ describe ProductsController, :type => :controller do
     end
   end
 
+  context 'GET /products/new' do
+    before do
+      @product = FactoryGirl.create(:product)
+      @user = FactoryGirl.create(:admin)
+      sign_in @user
+    end
+      it 'renders the new template' do
+        get :new, params: { id: @user.id }
+          expect(response).to be_ok
+          expect(response). to render_template('new')
+    end
+  end
+
   context 'Post /update/price' do
     before do
       @product = FactoryGirl.create(:product)
