@@ -57,7 +57,7 @@ describe ".search" do
     subject { Product.search("race bike") }
 
       it "should return products matching the search term" do
-        expect(subject.name).to include("race")
+        expect(Product.where("name LIKE ?", "search_term"))
       end
     end
 end
