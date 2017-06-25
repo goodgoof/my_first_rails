@@ -48,26 +48,21 @@ describe Product do
   		end
 	end
 
-describe Product do 
-	before do
-		@product = Product.create!(name:"race bike", description:"24", price: "780.0", color: "red")
-    	@user = User.create!(first_name:"John", last_name:"Smith", email:"testing@mail.com", password: "123456")
 
-    end
+describe ".search" do
+    let(:some_product) { Product.create!(name:"race bike", description:"24", price: "780.0", color: "red") }
+    let(:some_other_product) { Product.create!(name:"Liv", description:"26", price: "480.0", color: "Blue") }
 
-		context "Search term 'R' is entered" do
-          
-          it "should render the page and show only results of query" do
-      		 
-            expect(@product).to q "race bike"
-            expect(response).to have_http_status(200)
-            expect(assigns(:products)).to_not eq(Product.all)
-          end
-       end
+    subject { Product.search("race") }
 
+      it "should return products matching the search term" do
+        expect(subject.name).to include("race")
+      end
     end
 end
+    
 end
+
 
 
 

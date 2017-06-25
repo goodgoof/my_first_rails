@@ -103,7 +103,7 @@ describe ProductsController, :type => :controller do
     end
       it 'should not create product successfully' do
         @attr ={name: "Liv", description: "26", image_url: "https://www.pinterest.com/pin/494270127825878851", id: @product.id, price: 180.0, color: "Red" }
-          post :create, id: @product.id, product: @attr 
+          post :create, product: @attr 
             expect(response). != be_valid
             
           
