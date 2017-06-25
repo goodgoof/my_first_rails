@@ -50,10 +50,11 @@ describe Product do
 
 
 describe ".search" do
+	
     let(:some_product) { Product.create!(name:"race bike", description:"24", price: "780.0", color: "red") }
     let(:some_other_product) { Product.create!(name:"Liv", description:"26", price: "480.0", color: "Blue") }
 
-    subject { Product.search("race") }
+    subject { Product.search("race bike") }
 
       it "should return products matching the search term" do
         expect(subject.name).to include("race")
