@@ -58,6 +58,7 @@ describe ".search" do
 
       it "should return products matching the search term" do
         expect(subject).to include (some_product)
+        expect(subject).to_not include(some_other_product)
       end
     end
 end
